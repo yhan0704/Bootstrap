@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>coding booster</title>
+    <title>Henry's Hair Shop</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/codingBooster.css">
 </head>
@@ -13,54 +13,85 @@
         .jumbotron{
             text-shadow: black 0.2em 0.2em 0.2em;
             color:white;
-            background-image: url('images/forgot.png');
+            background-image: url('images/maxresdefault.jpg');
         }
+        
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 2.5rem;
+        }
+        footer{
+            background-color: rgb(46, 65, 65);
+        }
+    
     </style>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="index.html">Henry's</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
         
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Introduce <span class="sr-only"></span></a>
+                    </li>
+                    <li><a class="nav-link" href="instructor.html">Designer</a>
+                    </li>      
+                    <li class="nav-item dropdown inline">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                            href="lecture.html" role="button" aria-haspopup="true" aria-expanded="false">
+                            Hair Style</a>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Cut</a>
+                        <a class="dropdown-item" href="#">Perm</a>
+                        <a class="dropdown-item" href="#">Dyeing</a>
+                        </div>
+                    </li> 
+                </ul>
+
+                <form class="form-inline navbar-left"  style="margin-top:9px;">
+                <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+               
+                <ul class="navbar navbar-right" style="margin-bottom:0">
+                <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login/Register
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a href="loginForm.html"><button class="dropdown-item" type="button">Login</button></a>
+                    <a href="register.html"><button class="dropdown-item" type="button">Register</button></a>
+                </div>
+                </div>
+                </ul>
             </div>
         </nav>
 
         <div class="container">
             <div class="jumbotron">
-                <h1 class="text-center">코딩 부스터를 소개합니다.</h1>
-                <p class="text-center">코드 부스터는 교육 사이트 입니다. 다양한 IT 관련 강의가 존재합니다.</p>
-                <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">강의 들으러 가기</a></p> 
+                <h1 class="text-center">Welcome to Henry's hair shop.</h1>
+                <p class="text-center" style="color:lightcyan">Do not hesitate, once you have desision</p>
+                <p class="text-center"><a class="btn btn-primary btn-lg" href="lecture.html" role="button">Looking arouond Hair Styles</a></p> 
             </div>
 
             
             <div class="row">
                 <div class="col-md-4">
-                    <h4>코딩 부스터의 특징</h4>
-                    <p>코딩부스터는 다른 사이트와 차원이 다른</p>
-                    <p><a href="" class="btn btn-warning" data-target="#modal" data-toggle="modal">자세히 보기</a></p>
+                    <h4>Henry's Shop 1</h4>
+                    <p>You will find out we are special</p>
+                    <p><a href="instructor.html" class="btn btn-warning" data-target="#modal" data-toggle="modal">Details</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h4>코딩 부스터의 특징</h4>
-                    <p>코딩부스터는 뛰어난 개발자</p>
-                    <p><a href="#" class="btn btn-warning" >자세히 보기</a></p>
+                    <h4>Henry's Shop 2</h4>
+                    <p>Excellent desingers</p>
+                    <p><a href="instructor.html" class="btn btn-warning" >Details</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h4>코딩 부스터의 특징</h4>
-                    <p>코딩부스터는 개발에 있어서 핵심만</p>
-                    <p><a href="#" class="btn btn-warning" >자세히 보기</a></p>
+                    <h4>Medi-Pedi & Nail Spa</h4>
+                    <p>You can relex</p>
+                    <p><a href="#" class="btn btn-warning" >Details</a></p>
                 </div>
             </div>
        
@@ -68,18 +99,19 @@
             <hr>
 
             <div class="panel panel-primary">                 
-                <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>
-                    &nbsp;&nbsp;최신 강의 목록</h3>
+                <div class="panel-heading"><h3 class="panel-title"><span class="glyphicon glyphicon-saved"></span>
+                    &nbsp;&nbsp;New favorite styles</h3>
                 </div>
-                <div class="panel-body"> <div class="media">
+                <div class="panel-body"> 
+                    <div class="media">
                         <div class="media-left">
-                            <a href=""><img class="media-object" src="images/love.png" alt="Love"></a>
+                            <a href="#"><img class="media-object" src="images/1.jpg" width="80" height="80" alt="1"></a>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="#">Love </a>&nbsp; <span class="badge badge-secondary">New</span></h4>
-                            Love encompasses a range of strong and positive emotional and mental states,
-                            from the most sublime virtue or good habit, the deepest interpersonal affection
-                        </div>
+                            Audrey Hepburn said, “The beauty of a woman is not in the clothes she wears, the figure that she carries,
+                             or the way she combs her hair.”
+                      </div>
                     </div>
                 </div>
 
@@ -87,13 +119,11 @@
 
                 <div class="media">
                     <div class="media-left">
-                        <a href=""><img class="media-object" src="images/FB.jpg" alt="facebook"></a>
+                        <a href="#"><img class="media-object" src="images/2.jpg"  width="80" height="80" alt="2"></a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><a href="#">Facebook </a>&nbsp; <span class="badge badge-secondary">New</span></h4>
-                        Facebook, Inc. is an American online social media and social networking service company based in Menlo Park, California. 
-                        It was founded by Mark Zuckerberg,
-                        along with fellow Harvard College students and roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.
+                        <h4 class="media-heading"><a href="#">Fine </a>&nbsp; <span class="badge badge-secondary">New</span></h4>
+                        One hand scrunched into that tumble of hair, those curls that defied rules and gravity with equal contempt. 
                     </div>
                 </div>
 
@@ -101,12 +131,12 @@
 
                 <div class="media">
                     <div class="media-left">
-                        <a href=""><img class="media-object" src="images/car.png" alt="car"></a>
+                        <a href="#"><img class="media-object" src="images/3.jpg" width="80" height="80" alt="3"></a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading"><a href="#">Car </a>&nbsp; <span class="badge badge-secondary">New</span></h4>
-                        Browse cars for sale, shop the best deals near you, 
-                        find current loan rates and read FAQs about financing and warranties at Cars.com.
+                        <h4 class="media-heading"><a href="#">Sharp </a>&nbsp; <span class="badge badge-secondary">New</span></h4>
+                        As she turned to continue gathering the berries her cinnamon hair caught the early morning light 
+                        and shone in a way that it would not have even on the brightest of days back in the sprawling metropolis. 
                     </div>
                 </div>
                 <hr>
@@ -117,30 +147,52 @@
         <hr>
 
         <footer>
-            <div class="card bg-dark text-white">
-                <img class="card-img" src="images/window.png" alt="Card image" height="400">
-                <div class="card-img-overlay">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+            <div class="row">
+                <div class="col-sm-4" style="text-align: center">
+                    <h1> <p style="color: black">Copy Rights</p> </h1>
+                    <hr>
+                    <h4>Copyright &copy; 2019</h4>
+                    <h3 style="font-weight: bold">Henry Han</h3>
+                   
                 </div>
-            </div>
+                <div class="col-sm-4" style="text-align: center">
+                    <h1>Introduce Web Site</h1>
+                    <hr>
+                    <h3>Our website is a hair shop</h3>
+                    <h3>We have a extert digner. If you want to have good hair style, 
+                        you should visit or call us. our shop welcome to walk in.</h3>
+                    <div calss="list-group" style="font-size:20px;">
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-4" style="text-align: center">
+                    <h1>Contact</h1> 
+                    <hr>      
+                    <h3>phone: <a href="tel:+1-123-456-7890" style="font-size: 20px">123-456-7890</a><br></h3> 
+                    <h3>E-mail: <a href = "mailto: abc@example.com" style="font-size: 20px">abc@example.com</a><br></h3>
+                    <span class="fa fa-facebook-official" style="font-size:28px"></span><br>
+                    <span class="fa fa-instagram" style="font-size:28px"></span><br>
+                    <span class="fa fa-snapchat-square" style="font-size:28px"></span><br>
+                    <span class="fa fa-youtube-play" style="font-size:28px"></span><br>
+                </div>
+
+            </div>       
         </footer>
-
-
 
         <div class="row">
             <div class="modal" id="modal" tabindex="-1">
                 <div class="modal-dialog" style="background-color:white;">
                     <div class="modal-header" style="text-align: center; color:black;">
-                        코드 부스터의 특징
+                       Henry's Hair Shop!!
                         <button class="close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class= "modal-body" style="text-align: center; color:white;">
-                        저희 서비스는 유투브와 연동되어 제공됩니다.
-                        <img src="images/forgot.png" id="imagepreview" style="width:250px; height: 250px;">
+                    <div class= "modal-body" style="text-align: center; color:white;">                   
+                        <img src="images/4.jpg" id="imagepreview" style="width:250px; height: 250px;">
+                        <hr>
+                        <p>Offer Youtube is our one of best service.</p>
                     </div>
                 </div>
             </div>
@@ -150,6 +202,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>
 

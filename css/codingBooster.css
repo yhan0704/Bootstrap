@@ -8,11 +8,7 @@
     color:#000000;
     text-decoration: none;
 }
-*:hover {
-    color:#bbbbbb;
-    text-emphasis: none;
-    cursor: pointer;
-}
+
 
 /* 네비게이션 영역 */
 .navbar-default{
